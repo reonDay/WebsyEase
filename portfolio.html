@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>WebsyEase</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" type="images/png" sizes="16x16" href="images/websyease-high-resolution-logo-black.png">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <div class="header">
+         <div class="container">
+            <div class="row d_flex">
+               <div class=" col-md-2 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo">
+                           <a href="index.html"><img src="images/websyease-high-resolution-logo-transparent.png" alt="#" style="height: 75px;"/></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-8 col-sm-12">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item">
+                              <a class="nav-link" href="index.html">Home</a>
+                           </li>
+                           <li class="nav-item active">
+                              <a class="nav-link" href="about.html">About</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="hosting.html">Service</a>
+                           </li>
+                           <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                         </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <style>
+         .service-btn {
+         padding: 10px 20px;
+         margin: 10px;
+         cursor: pointer;
+         border: none;
+         background-color: #f0f0f0;
+         color: #333;
+         font-size: 16px;
+     }
+     
+     .service-btn.active {
+         background-color: #333;
+         color: #fff;
+     }
+ .menu-section {
+  padding: 2rem;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.menu-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.menu-item {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+      </style>      
+        <section id="menu" class="menu-section">
+            <h2>Our Portfolio</h2>
+            <div class="row">
+                <div class="col-md-12 text_align_center">
+                    <button id="webDevBtn" class="service-btn" onclick="showServicePackages('webDevelopment')">Web Development</button>
+                    <button id="dataScienceBtn" class="service-btn" onclick="showServicePackages('dataScience')">Data Science</button>
+                </div>
+            </div>
+            <div id="dataSciencePackages">
+              <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/analisis-data-bisnis-kecil.png" alt="Analisis Data" style="width: 200px; height: 200px;">
+                    <h3>Analisis Keuntungan Bisnis</h3>
+                </div>
+                <div class="menu-item">
+                    <img src="images/analisis-prediktif-data-bisnis.png" alt="Prediksi Data" style="width: 200px; height: 200px;">
+                    <h3>Prediksi Data Bisnis</h3>
+                </div>
+                <div class="menu-item">
+                    <img src="images/optimasi-inventaris.png" alt="Optimasi Inventaris" style="width: 200px; height: 200px;">
+                    <h3>Optimasi Inventaris</h3>
+                </div>
+            </div>
+            </div>
+            <div id="webDevelopmentPackages">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="images/website-kuliner.jpeg" alt="Website Kuliner" style="width: 200px; height: 200px;">
+                        <h3>Eatery Website</h3>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/fashion-web.jpeg" alt="Website Fashion" style="width: 200px; height: 200px;">
+                        <h3>Fashion Web</h3>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/echomic.jpeg" alt="Website Baca Komik" style="width: 200px; height: 200px;">
+                        <h3>Echomic Web</h3>
+                    </div>
+              </div>
+          
+        </section>
+    <footer>
+        <div class="footer">
+           <div class="container">
+              <div class="row">
+                 <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="infoma text_align_left">
+                       <h3>Social Media</h3>
+                       <ul class="conta" >
+                          <li ><a href="https://www.instagram.com/websyease/"><i class="fa fa-instagram"></i> WebsyEase</a></li>
+                       </ul>
+                    </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="infoma">
+                       <h3>Get Support</h3>
+                       <ul class="conta">
+                          <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="Javascript:void(0)"> Email : pixcelnarang23@gmail.com</a></li>
+                       </ul>
+                    </div>
+                 </div>
+                 <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="infoma">
+                       <h3>Company</h3>
+                       <ul class="menu_footer">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About </a></li>
+                          <li><a href="hosting.html">Service</a></li>
+                          <li><a href="portfolio.html">Portfolio</a></li>
+                       </ul>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="copyright">
+              <div class="container">
+                 <div class="row">
+                    <div class="col-md-12">
+                       <p>© 2024 All Rights Reserved WebsyEase</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </footer>
+    <script src="scripts.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- sidebar -->
+    <script src="js/custom.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            showServicePackages('webDevelopment'); 
+        });
+        
+        function showServicePackages(service) {
+            var webDevelopmentPackages = document.getElementById("webDevelopmentPackages");
+            var dataSciencePackages = document.getElementById("dataSciencePackages");
+        
+            if (service === 'webDevelopment') {
+                webDevelopmentPackages.style.display = "block";
+                dataSciencePackages.style.display = "none";
+                document.getElementById("webDevBtn").classList.add("active");
+                document.getElementById("dataScienceBtn").classList.remove("active");
+            } else if (service === 'dataScience') {
+                webDevelopmentPackages.style.display = "none";
+                dataSciencePackages.style.display = "block";
+                document.getElementById("webDevBtn").classList.remove("active");
+                document.getElementById("dataScienceBtn").classList.add("active");
+            }
+        }
+        </script>
+</body>
+</html>
